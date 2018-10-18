@@ -1,7 +1,12 @@
 package com.example.demo.domain;
 
-public class User {
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
+@ApiModel(description="用户信息")
+public class User {
+	
+	@ApiModelProperty(required=true,name="用户id",notes="说明文字",dataType="Long")
     private Long id;
     private String name;
     private Integer age;

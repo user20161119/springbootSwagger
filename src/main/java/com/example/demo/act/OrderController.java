@@ -20,9 +20,9 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping(value="/api/user")
-@Api(tags={"用户信息"})
-public class UserController {
+@RequestMapping(value="/api/order")
+@Api(tags={"order"})
+public class OrderController {
 
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
 
